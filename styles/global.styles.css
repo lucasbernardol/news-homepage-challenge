@@ -1,0 +1,80 @@
+:root {
+  --color-primary-soft-orange: hsl(35, 77%, 62%);
+  --color-primary-soft-red: hsl(5, 85%, 63%);
+
+  --color-off-white: #fffdfa;
+  --color-grayish-blue: hsl(233, 8%, 79%);
+  --color-dark-grayish-blue: hsl(236, 13%, 42%);
+
+  --color-very-dark-blue: hsl(240, 100%, 5%);
+
+  font-size: 62.5%; /** 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  border: none;
+  font-family: sans-serif;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 1.6rem; /** (1.6 * 10) = 16px */
+  color: var(--color-dark-grayish-blue);
+
+  font-weight: normal;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--color-off-white);
+}
+
+img {
+  width: 100%;
+
+  object-fit: cover;
+  -o-object-fit: cover;
+  object-position: center;
+  -o-object-position: center;
+  user-select: none;
+
+  pointer-events: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 58.5%;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 52%;
+  }
+}
